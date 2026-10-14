@@ -2,77 +2,122 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Proyectos · Alejandra Montaña</title>
+  <meta name="description" content="Prototipos y proyectos de IA aplicada e impacto social de Alejandra Montaña.">
+  <meta name="theme-color" content="#050b22">
+  <meta property="og:title" content="Proyectos · Alejandra Montaña">
+  <meta property="og:description" content="Prototipos y proyectos de IA aplicada e impacto social de Alejandra Montaña.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://acatherinebusinessintelligence.github.io/images/alejandra.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%232d94ff'/%3E%3Cstop offset='1' stop-color='%23ff59b3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">DraCorazon<span>IA</span></a>
-    <nav class="nav-links">
-      <a href="index.html">Inicio</a>
-      <a href="investigacion.html">Investigación</a>
-      <a href="docencia.html">Docencia</a>
-      <a class="active" href="proyectos.html">Proyectos</a>
-      <a href="info/">Hoja de vida</a>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="DraCorazónIA, inicio"><span class="dra">Dra</span><span class="corazon">Corazón</span><span class="ia">IA</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="nav-links" class="nav-links" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="investigacion.html">Investigación</a>
+        <a href="proyectos.html" aria-current="page">Proyectos</a>
+        <a href="docencia.html">Docencia</a>
+        <a href="cv/">Hoja de vida</a>
+      <a class="btn btn-primary btn-sm nav-cta" href="mailto:analizamostunegocio@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n">Contactar</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <h1 class="page-title">Proyectos</h1>
-  <p class="lead">No solo construyo modelos: construyo sistemas que generan impacto. Una selección de prototipos,
-  mentorías y desarrollos en distintos sectores.</p>
+<main id="contenido">
+  <div class="wrap">
+    <section class="page-hero">
+      <span class="eyebrow">Prototipos · Impacto · Mentoría</span>
+      <h1>No solo construyo modelos: <span class="grad-text">construyo sistemas</span></h1>
+      <p class="lead">Una selección de desarrollos, iniciativas y mentorías en distintos sectores, del aula a la empresa y al territorio.</p>
+    </section>
 
-  <section>
-    <h2>IA aplicada</h2>
-    <div class="grid">
-      <div class="card"><h3>Dashboard legislativo con RAG</h3>
-        <p>Análisis temático automatizado y afinidad temática sobre información legislativa.</p>
-        <div class="tags"><span class="tag">RAG</span><span class="tag">Dashboards</span></div></div>
-      <div class="card"><h3>Evaluación automatizada BMM</h3>
-        <p>Plataforma de exámenes con calificación por LLM sobre el Business Motivation Model.</p>
-        <div class="tags"><span class="tag">n8n</span><span class="tag">FastAPI</span><span class="tag">LLM</span></div></div>
-      <div class="card"><h3>Agentes para procesos comerciales</h3>
-        <p>Automatización de procesos comerciales y administrativos con agentes inteligentes.</p>
-        <div class="tags"><span class="tag">Agentes</span><span class="tag">Automatización</span></div></div>
-      <div class="card"><h3>Reportes de actividad en Moodle</h3>
-        <p>Análisis automatizado por estudiante a partir de logs de la plataforma.</p>
-        <div class="tags"><span class="tag">pandas</span><span class="tag">Learning Analytics</span></div></div>
-    </div>
-  </section>
+    <section class="section" style="padding-top:40px">
+      <div class="section-head"><div><span class="kicker">IA aplicada</span><h2>Desarrollos</h2></div></div>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6z"/></svg></div><span class="badge type">RAG</span></div>
+          <h3>Dashboard legislativo</h3><p>Análisis temático automatizado y afinidad temática sobre información del Senado.</p><div class="tags"><span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Streamlit</span></div><div class="card-links"><a href="https://acatherinebusinessintelligence.github.io/senado-rag-dashboard/#vision" target="_blank" rel="noopener">Demo ↗</a><a href="https://github.com/acatherinebusinessintelligence/senado-rag-dashboard" target="_blank" rel="noopener">Código ↗</a></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div><span class="badge type">Plataforma</span></div>
+          <h3>Axiora Lab</h3><p>Desarrollo humano, catalización e IA aplicada. Incluye 33 Virtudes, un juego de formación en valores potenciado con IA.</p><div class="tags"><span class="tag">Gamificación</span><span class="tag">IA</span></div><div class="card-links"><a href="https://axiora-lab.onrender.com/" target="_blank" rel="noopener">Visitar ↗</a></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div><span class="badge type">Agentes</span></div>
+          <h3>Agentes para procesos comerciales</h3><p>Automatización de procesos comerciales y administrativos con agentes inteligentes y flujos n8n.</p><div class="tags"><span class="tag">Agentes</span><span class="tag">n8n</span><span class="tag">Automatización</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><span class="badge type">LLM</span></div>
+          <h3>Evaluación automatizada BMM</h3><p>Plataforma de exámenes con calificación asistida por LLM sobre el Business Motivation Model.</p><div class="tags"><span class="tag">FastAPI</span><span class="tag">LLM</span><span class="tag">Evaluación</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div><span class="badge type">IA local</span></div>
+          <h3>IA local y edge con HP LATAM</h3><p>Demostraciones de IA local y validación de modelos en estaciones de alto desempeño con GPU y NPU.</p><div class="tags"><span class="tag">Edge AI</span><span class="tag">GPU/NPU</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg></div><span class="badge type">Analytics</span></div>
+          <h3>Reportes de actividad en Moodle</h3><p>Análisis automatizado por estudiante a partir de logs de la plataforma.</p><div class="tags"><span class="tag">pandas</span><span class="tag">Learning Analytics</span></div>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>Impacto social y sostenibilidad</h2>
-    <div class="grid">
-      <div class="card"><h3>AgroIA Cormechoque</h3>
-        <p>Modelos para mitigar la compactación del suelo en agricultura campesina.</p>
-        <div class="tags"><span class="tag">Agro</span><span class="tag">ML</span></div></div>
-      <div class="card"><h3>ECO-CAFÉ &amp; RÍO IA</h3>
-        <p>Mentoría: neutralizador de aguas mieles y boya centinela para monitoreo del río Luisa.</p>
-        <div class="tags"><span class="tag">IoT</span><span class="tag">Mentoría</span></div></div>
-      <div class="card"><h3>Pausas activas inteligentes</h3>
-        <p>Mentoría: pausas activas con códigos QR en la IE Marco Fidel Suárez (sedes urbana y rurales).</p>
-        <div class="tags"><span class="tag">Educación</span><span class="tag">Mentoría</span></div></div>
-      <div class="card"><h3>33 Virtudes · Axiora Lab</h3>
-        <p>Juego de formación en valores potenciado con IA.</p>
-        <div class="tags"><span class="tag">Gamificación</span><span class="tag">IA</span></div></div>
-      <div class="card"><h3>Women in Tech Colombia</h3>
-        <p>Sistema de medición y seguimiento de impacto de programas.</p>
-        <div class="tags"><span class="tag">Métricas</span><span class="tag">Impacto</span></div></div>
-    </div>
-  </section>
+    <section class="section">
+      <div class="section-head"><div><span class="kicker">Impacto social</span><h2>Sostenibilidad y comunidad</h2></div></div>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15-9 0-15 6-15 14zM5 19l7-7"/></svg></div><span class="badge type">Agro</span></div>
+          <h3>AgroIA Cormechoque</h3><p>Modelos para analizar y mitigar la compactación del suelo en agricultura campesina de Boyacá.</p><div class="tags"><span class="tag">Agro</span><span class="tag">ML</span></div><div class="card-links"><a href="https://github.com/acatherinebusinessintelligence/agroia-cormechoque-public" target="_blank" rel="noopener">Documentación ↗</a></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15-9 0-15 6-15 14zM5 19l7-7"/></svg></div><span class="badge type">Mentoría</span></div>
+          <h3>ECO-CAFÉ &amp; RÍO IA</h3><p>Neutralizador de aguas mieles y boya centinela para monitoreo del río Luisa.</p><div class="tags"><span class="tag">IoT</span><span class="tag">Mentoría</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg></div><span class="badge type">Mentoría</span></div>
+          <h3>Pausas activas inteligentes</h3><p>Pausas activas con códigos QR en la IE Marco Fidel Suárez, sedes urbana y rurales.</p><div class="tags"><span class="tag">Educación</span><span class="tag">Mentoría</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div><span class="badge type">Métricas</span></div>
+          <h3>Women in Tech Colombia</h3><p>Sistema de medición y seguimiento de impacto de programas.</p><div class="tags"><span class="tag">Métricas</span><span class="tag">Impacto</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg></div><span class="badge type">Herramienta</span></div>
+          <h3>Love Audit AI</h3><p>Chequeo interactivo de IA centrada en las personas.</p><div class="tags"><span class="tag">IA responsable</span></div><div class="card-links"><a href="https://github.com/acatherinebusinessintelligence/Love-Audit-AI" target="_blank" rel="noopener">Código ↗</a></div>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>Código abierto</h2>
-    <p>Más proyectos y notebooks en
-      <a href="https://github.com/acatherinebusinessintelligence" target="_blank" rel="noopener">GitHub</a>.</p>
-  </section>
+    <section class="section">
+      <div class="cta reveal">
+        <h2>Más código, notebooks y laboratorios</h2>
+        <p>Todo mi trabajo abierto está en GitHub y Kaggle.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/acatherinebusinessintelligence/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
+          <a class="btn btn-ghost" href="https://www.kaggle.com/alejandramontana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.8 23.6c0 .3-.1.4-.4.4h-3.1c-.2 0-.4-.1-.5-.3l-5-6.4-1.4 1.3v5c0 .3-.1.4-.4.4H5.6c-.3 0-.4-.1-.4-.4V.4c0-.3.1-.4.4-.4H8c.3 0 .4.1.4.4v14.4l6.2-6.3c.2-.2.4-.3.6-.3h3.2c.2 0 .3.1.3.2s0 .2-.1.3l-6.5 6.3 6.8 8.5c.1.1.1.2.1.3z"/></svg>Kaggle</a>
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
 
-<footer>© 2026 Alejandra Catherine Montaña Acevedo · DraCorazonIA</footer>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Alejandra Catherine Montaña Acevedo · <span class="grad-text"><strong>DraCorazónIA</strong></span></span>
+    <span><a href="mailto:analizamostunegocio@gmail.com">analizamostunegocio@gmail.com</a></span>
+  </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

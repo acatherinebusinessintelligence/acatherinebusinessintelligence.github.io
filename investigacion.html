@@ -2,101 +2,176 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Investigación · Alejandra Montaña</title>
+  <meta name="description" content="Proyectos de investigación, datasets y publicaciones con DOI de Alejandra Montaña: EEG, AgroIA, HUMANO, RAG legislativo y política de IA.">
+  <meta name="theme-color" content="#050b22">
+  <meta property="og:title" content="Investigación · Alejandra Montaña">
+  <meta property="og:description" content="Proyectos de investigación, datasets y publicaciones con DOI de Alejandra Montaña: EEG, AgroIA, HUMANO, RAG legislativo y política de IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://acatherinebusinessintelligence.github.io/images/alejandra.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%232d94ff'/%3E%3Cstop offset='1' stop-color='%23ff59b3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">DraCorazon<span>IA</span></a>
-    <nav class="nav-links">
-      <a href="index.html">Inicio</a>
-      <a class="active" href="investigacion.html">Investigación</a>
-      <a href="docencia.html">Docencia</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="info/">Hoja de vida</a>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="DraCorazónIA, inicio"><span class="dra">Dra</span><span class="corazon">Corazón</span><span class="ia">IA</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="nav-links" class="nav-links" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="investigacion.html" aria-current="page">Investigación</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="docencia.html">Docencia</a>
+        <a href="cv/">Hoja de vida</a>
+      <a class="btn btn-primary btn-sm nav-cta" href="mailto:analizamostunegocio@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n">Contactar</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <h1 class="page-title">Investigación</h1>
-  <p class="lead">Trabajo en la intersección entre datos, ética y gobernanza: IA que no solo sea eficiente,
-  sino explicable, responsable y alineada con el propósito de las organizaciones y comunidades.</p>
+<main id="contenido">
+  <div class="wrap">
+    <section class="page-hero">
+      <span class="eyebrow">Datos · Ética · Gobernanza</span>
+      <h1>Investigación con <span class="grad-text">evidencia abierta</span></h1>
+      <p class="lead">Trabajo en la intersección entre datos, ética y gobernanza: IA que no solo sea eficiente, sino explicable,
+      responsable y alineada con el propósito de las comunidades. Cada proyecto enlaza a su DOI, repositorio o demo.</p>
+    </section>
 
-  <section>
-    <h2>Líneas de investigación</h2>
-    <div class="grid">
-      <div class="card"><h3>IA responsable y centrada en el humano</h3>
-        <p>Transparencia algorítmica, gobernanza de datos, evaluación de riesgos e implementación progresiva.</p>
-        <div class="tags"><span class="tag">Ética</span><span class="tag">Gobernanza</span></div></div>
-      <div class="card"><h3>IA cívico-tecnológica</h3>
-        <p>Análisis legislativo con modelos RAG, clasificación temática automatizada y acceso ciudadano a información pública.</p>
-        <div class="tags"><span class="tag">RAG</span><span class="tag">NLP</span></div></div>
-      <div class="card"><h3>IA aplicada al agro y la sostenibilidad</h3>
-        <p>Modelos para mitigar la compactación del suelo en agricultura campesina y monitoreo ambiental.</p>
-        <div class="tags"><span class="tag">AgroIA</span><span class="tag">IoT</span></div></div>
-      <div class="card"><h3>Neurociencia computacional (EEG)</h3>
-        <p>Colaboración binacional UNIMINUTO – TES Ecatepec (México) en análisis de señales EEG.</p>
-        <div class="tags"><span class="tag">EEG</span><span class="tag">Machine Learning</span></div></div>
-      <div class="card"><h3>Política digital e IA</h3>
-        <p>Formación e investigación con el Center for AI and Digital Policy (CAIDP) y divulgación de sus intervenciones.</p>
-        <div class="tags"><span class="tag">Política pública</span><span class="tag">Divulgación</span></div></div>
-    </div>
-  </section>
+    <section class="section" style="padding-top:40px">
+      <div class="filters" role="group" aria-label="Filtrar por línea">
+        <button class="filter" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="filter" data-filter="etica" aria-pressed="false">IA responsable</button>
+        <button class="filter" data-filter="neuro" aria-pressed="false">Neurociencia / EEG</button>
+        <button class="filter" data-filter="agro" aria-pressed="false">Agro</button>
+        <button class="filter" data-filter="civica" aria-pressed="false">Cívico-tecnología</button>
+        <button class="filter" data-filter="nlp" aria-pressed="false">PLN y RAG</button>
+        <button class="filter" data-filter="ml" aria-pressed="false">Machine Learning</button>
+      </div>
+      <div class="grid">
+      <article class="card featured reveal" data-topics="agro ml">
+        <div>
+          <div class="badges"><span class="badge type">Proyecto de investigación</span><span class="badge live">En curso</span></div>
+          <h3>AgroIA Cormechoque</h3>
+          <p>Prototipo de IA para analizar la compactación del suelo en agricultura campesina de la microcuenca del río Cormechoque (Boyacá). Integra motor de reglas técnicas, clustering K-Means, PCA, experimentos supervisados y simulación de escenarios de manejo, siempre con revisión humana.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15-9 0-15 6-15 14zM5 19l7-7"/></svg></div>
+          <p class="meta">UNAD (ejecutora) · UNIMINUTO (coinvestigadora) · Código PDT16ZCBOYECBTI2026 · 2026</p>
+          <div class="tags"><span class="tag">Machine Learning</span><span class="tag">K-Means</span><span class="tag">PCA</span><span class="tag">Agricultura campesina</span></div>
+          <div class="card-links"><a href="https://github.com/acatherinebusinessintelligence/agroia-cormechoque-public" target="_blank" rel="noopener">Documentación pública ↗</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-topics="neuro ml">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></div><span class="badge type">Resultado citable</span></div>
+        <h3>EEG NeuroAction: resultados y visor interactivo</h3>
+        <p>Visor web y archivo de resultados del pipeline EEG NeuroAction: figuras BANDPOWER, topomapas, espectros, detección de artefactos y modelos de clasificación de movimientos motores con comparación controlada de estrategias de balanceo.</p>
+        <div class="tags"><span class="tag">EEG</span><span class="tag">Clasificación</span><span class="tag">Visualización</span></div>
+        <p class="meta">Cortés Barrera, Montaña Acevedo, Olivares Ceja, Ruiz Garduño · Zenodo · 2026</p>
+        <div class="card-links"><a class="doi" href="https://doi.org/10.5281/zenodo.22286625" target="_blank" rel="noopener">DOI 10.5281/zenodo.22286625 ↗</a><a href="https://acatherinebusinessintelligence.github.io/eeg-neuroaction-resultados/" target="_blank" rel="noopener">Visor ↗</a><a href="https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      <article class="card reveal" data-topics="neuro">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></div><span class="badge type">Dataset</span></div>
+        <h3>Raw multichannel brainwave dataset</h3>
+        <p>Dataset EEG multicanal para clasificación de movimientos (izquierda, derecha, empujar, jalar), con automatización del emparejamiento de señales CSV y archivos de eventos. Base para una competencia interuniversitaria México–Colombia.</p>
+        <div class="tags"><span class="tag">EEG</span><span class="tag">Dataset abierto</span><span class="tag">Automatización</span></div>
+        <p class="meta">Cortés, G.; Montaña Acevedo, A. · Kaggle · 2026 · Colaboración UNIMINUTO – TES Ecatepec</p>
+        <div class="card-links"><a class="doi" href="https://doi.org/10.34740/kaggle/dsv/16284290" target="_blank" rel="noopener">DOI 10.34740/kaggle/dsv/16284290 ↗</a><a href="https://www.kaggle.com/code/alejandramontana/notebookf9575a2f76" target="_blank" rel="noopener">Notebook ↗</a><a href="https://github.com/acatherinebusinessintelligence/EEG_Mexico_Colombia" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      <article class="card reveal" data-topics="etica">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg></div><span class="badge type">Framework metodológico</span></div>
+        <h3>HUMANO: framework de IA centrado en las personas</h3>
+        <p>Marco para diseñar y auditar sistemas de IA en seis dimensiones: Humanizar el propósito, Ubicar personas e impactos, Minimizar datos y riesgos, Asegurar autonomía y transparencia, Nombrar responsables y Observar, auditar y corregir. Caso demostrativo sobre Adult Census.</p>
+        <div class="tags"><span class="tag">IA responsable</span><span class="tag">Auditoría</span><span class="tag">Equidad</span></div>
+        <p class="meta">Montaña Acevedo, A. · Zenodo · 2026</p>
+        <div class="card-links"><a class="doi" href="https://doi.org/10.5281/zenodo.22285253" target="_blank" rel="noopener">DOI 10.5281/zenodo.22285253 ↗</a><a href="https://acatherinebusinessintelligence.github.io/humano-ai-framework/" target="_blank" rel="noopener">Sitio ↗</a><a href="https://www.kaggle.com/code/alejandramontana/humano-adult-census-kaggle" target="_blank" rel="noopener">Notebook ↗</a><a href="https://github.com/acatherinebusinessintelligence/humano-ai-framework" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      <article class="card reveal" data-topics="civica nlp">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6z"/></svg></div><span class="badge type">Sistema RAG</span></div>
+        <h3>Senado RAG Dashboard</h3>
+        <p>Análisis legislativo con Retrieval-Augmented Generation: búsqueda semántica sobre proyectos de ley y plenarias, perfiles de senadores, grafos temáticos y analítica visual para acercar la información pública a la ciudadanía.</p>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">PLN</span><span class="tag">Transparencia</span><span class="tag">Cívico-tecnología</span></div>
+        <p class="meta">Embeddings · ChromaDB · Streamlit · 2026</p>
+        <div class="card-links"><a href="https://acatherinebusinessintelligence.github.io/senado-rag-dashboard/#vision" target="_blank" rel="noopener">Demo ↗</a><a href="https://github.com/acatherinebusinessintelligence/senado-rag-dashboard" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      <article class="card reveal" data-topics="etica civica">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div><span class="badge type">Política de IA</span><span class="badge live">En curso</span></div>
+        <h3>AI Policy Clinic · CAIDP</h3>
+        <p>Investigación en política de IA comparada en el Research Group del Center for AI and Digital Policy (Washington D. C.), con aporte a la actualización del informe país del CAIDP AI Index. Línea doctoral: representación computacional y verificación de requisitos regulatorios de IA en múltiples jurisdicciones, aplicada a salud.</p>
+        <div class="tags"><span class="tag">Gobernanza</span><span class="tag">Regulación</span><span class="tag">Salud</span></div>
+        <p class="meta">Center for AI and Digital Policy · 2026</p>
+        
+      </article>
+      <article class="card reveal" data-topics="etica nlp">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div><span class="badge type">Investigación aplicada</span></div>
+        <h3>Narrative Intelligence STEAM LATAM</h3>
+        <p>Análisis narrativo con IA sobre trayectorias de mujeres en STEAM en Latinoamérica: datos, visualizaciones e interpretación para visibilizar referentes y brechas.</p>
+        <div class="tags"><span class="tag">PLN</span><span class="tag">Género</span><span class="tag">Visualización</span></div>
+        <p class="meta">Women in STEAM · Analítica narrativa</p>
+        <div class="card-links"><a href="https://github.com/acatherinebusinessintelligence/steam-women-narrative-ai-complete" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      <article class="card reveal" data-topics="etica">
+        <div class="badges"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg></div><span class="badge type">Herramienta</span></div>
+        <h3>Love Audit AI · Human-Centered AI Check</h3>
+        <p>Instrumento interactivo para revisar un sistema de IA desde preguntas centradas en las personas: propósito, impactos, transparencia y responsabilidad.</p>
+        <div class="tags"><span class="tag">IA responsable</span><span class="tag">Checklist</span></div>
+        <p class="meta">Human-Centered AI · Autoevaluación</p>
+        <div class="card-links"><a href="https://github.com/acatherinebusinessintelligence/Love-Audit-AI" target="_blank" rel="noopener">Repositorio ↗</a></div>
+      </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>Marcos metodológicos propios</h2>
-    <div class="framework"><strong>NEUROIA</strong> — Need · Empathy · Use Responsible · Redes híbridas ·
-      Observación · Implementación progresiva.</div>
-    <div class="framework"><strong>Ciclo UWE</strong> — Understand · Weave · Empower.</div>
-    <div class="framework"><strong>HUMANO</strong> — marco de análisis aplicado, entre otros, al dataset Adult Census (Kaggle).</div>
-  </section>
+    <section class="section">
+      <div class="section-head"><div><span class="kicker">Producción intelectual</span><h2>Publicaciones y productos</h2></div></div>
+      <div class="panel reveal">
+        <div class="pub"><h3>Raw multichannel brainwave dataset</h3>
+          <p>Cortés, G.; Montaña Acevedo, A. (2026). Kaggle. <a href="https://doi.org/10.34740/kaggle/dsv/16284290" target="_blank" rel="noopener">doi.org/10.34740/kaggle/dsv/16284290</a></p></div>
+        <div class="pub"><h3>EEG NeuroAction: resultados, análisis y visualización interactiva (v1.0.1)</h3>
+          <p>Cortés Barrera, G.; Montaña Acevedo, A.; Olivares Ceja, J. M.; Ruiz Garduño, J. K. (2026). Zenodo. <a href="https://doi.org/10.5281/zenodo.22286625" target="_blank" rel="noopener">doi.org/10.5281/zenodo.22286625</a></p></div>
+        <div class="pub"><h3>HUMANO: framework para diseñar y auditar sistemas de IA centrados en las personas</h3>
+          <p>Montaña Acevedo, A. (2026). Zenodo. <a href="https://doi.org/10.5281/zenodo.22285253" target="_blank" rel="noopener">doi.org/10.5281/zenodo.22285253</a></p></div>
+        <div class="pub"><h3>Voces de Impacto Global</h3>
+          <p>Obra colectiva, coautora (2025). 376 p. <a href="https://www.amazon.com/-/es/dp/B0G52C9DPS" target="_blank" rel="noopener">Ver en Amazon ↗</a></p></div>
+        <div class="pub"><h3>infralab: laboratorio web con tutor de IA para Gestión de la Infraestructura</h3>
+          <p>Desarrollo tecnológico, UNIMINUTO (2026). Aceptado en la V Jornada de IA Minuto de Dios. <a href="https://github.com/acatherinebusinessintelligence/infralab" target="_blank" rel="noopener">Repositorio ↗</a></p></div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Proyectos de investigación</h2>
-    <ul class="list">
-      <li><strong>AI Policy Clinic</strong> — Investigadora, Research Group, Center for AI and Digital Policy (CAIDP), Washington D. C., 2026. Política de IA comparada y actualización del informe país del CAIDP AI Index.</li>
-      <li><strong>Colaboración binacional EEG México–Colombia</strong> (UNIMINUTO – TES Ecatepec), 2026 – actualidad. Pipeline de señales EEG, dataset y repositorio con DOI.</li>
-      <li><strong>AgroIA Cormechoque</strong> (con UNAD – ECAPMA), 2026. Plataforma de IA para el riesgo de compactación del suelo en agricultura campesina.</li>
-      <li>Colíder del <strong>Semillero SOPHIA</strong> (UNIMINUTO, grupo Investigación-IT), vigente. Líder del Semillero de Analítica e IA (Universidad de San Buenaventura, 2023–2024) y del Semillero ATHENEA (UNIMINUTO, 2022).</li>
-    </ul>
-  </section>
+    <section class="section">
+      <div class="section-head"><div><span class="kicker">Ponencias</span><h2>Eventos científicos</h2></div></div>
+      <div class="timeline">
+        <div class="tl-item now reveal"><span class="when">Ago. 2026 · Yopal</span><h3>AgroIA Cormechoque: plataforma de IA para el riesgo de compactación del suelo</h3>
+          <p>VIII Congreso Internacional de Ciencias Agrarias y Ambientales (CICAA 2026), UNAD – ECAPMA.</p></div>
+        <div class="tl-item reveal"><span class="when">2026</span><h3>CultivaTech AI</h3><p>CICAA 2026, UNAD – ECAPMA.</p></div>
+        <div class="tl-item reveal"><span class="when">Jul. 2023</span><h3>«IA: Inteligencia Artesanal»</h3>
+          <p>XPOILERS, Festival de StandUp Científicos e Investigativos, Universidad de San Buenaventura.</p></div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Publicaciones y productos</h2>
-    <div class="item"><strong>Raw multichannel brainwave dataset</strong><br>
-      <span class="meta">Cortés, G.; Montaña Acevedo, A. · Kaggle · 2026 · <a href="https://doi.org/10.34740/kaggle/dsv/16284290" target="_blank" rel="noopener">DOI 10.34740/kaggle/dsv/16284290</a></span></div>
-    <div class="item"><strong>EEG NeuroAction: resultados, análisis y visualización interactiva, v1.0.0</strong><br>
-      <span class="meta">Cortés Barrera, G.; Montaña Acevedo, A.; Olivares Ceja, J. M.; Ruiz Garduño, J. K. · Zenodo · 2026 · <a href="https://doi.org/10.5281/zenodo.22286625" target="_blank" rel="noopener">DOI 10.5281/zenodo.22286625</a></span></div>
-    <div class="item"><strong>Voces de Impacto Global</strong> (obra colectiva, coautora)<br>
-      <span class="meta">Amazon Kindle · 376 p. · 2025 · ASIN B0G3Y1B5S4</span></div>
-    <div class="item"><strong>infralab</strong> — laboratorio web con tutor de IA para Gestión de la Infraestructura<br>
-      <span class="meta">Desarrollo tecnológico · UNIMINUTO · 2026 · Aceptado en la V Jornada de IA Minuto de Dios</span></div>
-  </section>
-
-  <section>
-    <h2>Ponencias</h2>
-    <div class="item"><strong>AgroIA Cormechoque: plataforma de IA para el riesgo de compactación del suelo</strong><br>
-      <span class="meta">VIII Congreso Internacional de Ciencias Agrarias y Ambientales (CICAA 2026) · UNAD – ECAPMA · Yopal · ago. 2026</span></div>
-    <div class="item"><strong>CultivaTech AI</strong><br>
-      <span class="meta">Ponencia · CICAA 2026, UNAD – ECAPMA</span></div>
-    <div class="item"><strong>«IA: Inteligencia Artesanal»</strong><br>
-      <span class="meta">XPOILERS, Festival de StandUp Científicos e Investigativos · Universidad de San Buenaventura · jul. 2023</span></div>
-  </section>
-
-  <section>
-    <h2>Servicio académico</h2>
-    <ul class="list">
-      <li>Par evaluadora científica de la revista <em>IEEE Access</em> (2026 – actualidad).</li>
-      <li>Curadora académica y experta disciplinar en IA — Universidad Piloto de Colombia (2025).</li>
-    </ul>
-  </section>
+    <section class="section">
+      <div class="section-head"><div><span class="kicker">Comunidad científica</span><h2>Semilleros y servicio académico</h2></div></div>
+      <div class="grid">
+        <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div><h3>Semillero SOPHIA</h3><p>Colíder · UNIMINUTO, grupo Investigación-IT. Vigente.</p></div>
+        <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div><h3>Semillero de Analítica e IA</h3><p>Líder · Universidad de San Buenaventura, 2023–2024. Dirección de trabajos de grado.</p></div>
+        <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg></div><h3>Semillero ATHENEA</h3><p>Líder · UNIMINUTO, 2022.</p></div>
+        <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Par evaluadora · IEEE Access</h3><p>Revisión científica desde enero de 2026.</p></div>
+      </div>
+    </section>
+  </div>
 </main>
 
-<footer>© 2026 Alejandra Catherine Montaña Acevedo · DraCorazonIA</footer>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Alejandra Catherine Montaña Acevedo · <span class="grad-text"><strong>DraCorazónIA</strong></span></span>
+    <span><a href="mailto:analizamostunegocio@gmail.com">analizamostunegocio@gmail.com</a></span>
+  </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

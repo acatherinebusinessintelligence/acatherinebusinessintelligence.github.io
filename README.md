@@ -1,18 +1,28 @@
-# Sitio personal — Alejandra Catherine Montaña Acevedo
+# Sitio personal — Alejandra Catherine Montaña Acevedo · DraCorazónIA
 
-Sitio estático (HTML + CSS, sin dependencias) para GitHub Pages.
+Sitio estático (HTML + CSS + un poco de JS, sin dependencias) publicado con GitHub Pages en
+https://acatherinebusinessintelligence.github.io/
 
-## Publicarlo
+## Páginas
 
-1. En GitHub crea un repositorio llamado exactamente **`acatherinebusinessintelligence.github.io`** (público).
-2. Sube todos los archivos de esta carpeta a la raíz del repositorio
-   (`index.html`, `investigacion.html`, `docencia.html`, `proyectos.html`, `style.css`, carpeta `images/`).
-3. Ve a **Settings → Pages** y en *Source* elige la rama `main` y la carpeta `/ (root)`.
-4. En uno o dos minutos estará en: `https://acatherinebusinessintelligence.github.io`
+| Archivo | Contenido |
+|---|---|
+| `index.html` | Inicio: presentación, investigaciones destacadas, marcos propios y contacto |
+| `investigacion.html` | Proyectos con filtros por línea, publicaciones con DOI, ponencias y semilleros |
+| `proyectos.html` | Desarrollos de IA aplicada e impacto social |
+| `docencia.html` | Laboratorios y simuladores abiertos, trayectoria docente y formación ejecutiva |
+| `cv/` | Hoja de vida académica |
 
-## Personalizar
+`style.css` contiene el sistema visual (paleta azul → rosa de DraCorazónIA, Space Grotesk + Manrope)
+y `main.js` el menú móvil, los filtros y las animaciones de aparición.
 
-- **Foto:** guarda tu foto como `images/foto.jpg` (cuadrada, ~600×600 px). Si no existe, se muestran tus iniciales.
-- **Enlaces:** reemplaza `los enlaces de la barra social en `index.html` (puedes añadir LinkedIn o Google Scholar con tu usuario).
-- **Publicaciones:** completa la sección en `investigacion.html` con autores, año y DOI.
-- **Colores:** cambia `--accent` y `--accent-2` al inicio de `style.css`. Tiene modo oscuro automático.
+## Editar
+
+- **Foto:** `images/alejandra.jpg` y `images/alejandra.webp`.
+- **Contacto:** solo correo (`analizamostunegocio@gmail.com`); no se publican teléfonos.
+- **Nuevas investigaciones:** copia un `<article class="card">` en `investigacion.html`; el atributo
+  `data-topics` (`etica`, `neuro`, `agro`, `civica`, `nlp`, `ml`) define en qué filtros aparece.
+
+## Publicación
+
+Settings → Pages → *Deploy from a branch* → `main` / `(root)`.
