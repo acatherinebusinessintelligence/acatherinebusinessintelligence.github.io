@@ -375,14 +375,8 @@ html, body { overflow-x: clip; }
 @media (max-width: 560px) {
   .portrait { --R: 29vw; margin-top: 22px; margin-bottom: 30px; }
   .orbit-chip b { font-size: .7rem; padding: 7px 10px; }
-  .orbit-chip:nth-child(n+7) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .orbit, .orbit-chip span { animation: none; } }
-@media (max-width: 560px) {
-  .orbit-chip:nth-child(1) { --a: 0deg !important; } .orbit-chip:nth-child(2) { --a: 60deg !important; }
-  .orbit-chip:nth-child(3) { --a: 120deg !important; } .orbit-chip:nth-child(4) { --a: 180deg !important; }
-  .orbit-chip:nth-child(5) { --a: 240deg !important; } .orbit-chip:nth-child(6) { --a: 300deg !important; }
-}
 
 /* ---------- Mi historia ---------- */
 .story-hero { text-align: center; max-width: 860px; margin: 0 auto; }
