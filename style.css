@@ -132,15 +132,6 @@ p { margin: 0 0 1em; }
   width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 18%;
 }
 .portrait-ring picture { display: block; overflow: hidden; border: 6px solid rgba(255, 255, 255, .95); }
-.portrait-badge {
-  position: absolute; display: flex; align-items: center; gap: 10px;
-  padding: 10px 14px; border-radius: 16px; font-size: .85rem; font-weight: 700;
-  background: rgba(8, 16, 46, .92); border: 1px solid var(--line-strong);
-  box-shadow: var(--shadow); backdrop-filter: blur(8px);
-}
-.portrait-badge b { font-family: var(--display); font-size: 1.25rem; }
-.portrait-badge.b1 { left: -6%; bottom: 14%; }
-.portrait-badge.b2 { right: -4%; top: 10%; }
 
 /* ---------- Métricas ---------- */
 .stats {
@@ -298,8 +289,6 @@ p { margin: 0 0 1em; }
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .hero-actions .btn { width: 100%; }
-  .portrait-badge { font-size: .78rem; padding: 8px 11px; }
-  .portrait-badge.b1 { left: -8%; } .portrait-badge.b2 { right: -8%; }
   .stat { padding: 18px; }
   .card, .card.featured { padding: 22px; }
 }
@@ -360,3 +349,37 @@ p { margin: 0 0 1em; }
 .mini-stats div { display: flex; align-items: baseline; gap: 12px; }
 .mini-stats b { font: 800 1.7rem/1 var(--display); letter-spacing: -.04em; min-width: 78px; }
 .mini-stats span { color: var(--muted); font-size: .92rem; }
+
+/* ---------- Etiquetas en órbita alrededor de la foto ---------- */
+.portrait { --R: 200px; --spin: 60s; }
+.hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.hero .portrait { width: min(100%, 380px); }
+html, body { overflow-x: clip; }
+@media (max-width: 1140px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero .portrait { order: -1; width: min(72vw, 320px); }
+}
+.orbit { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; animation: orbit-spin var(--spin) linear infinite; }
+.orbit-chip { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: rotate(var(--a)) translateX(var(--R)) rotate(calc(-1 * var(--a))); }
+.orbit-chip span { display: block; width: 0; height: 0; animation: orbit-spin var(--spin) linear infinite reverse; }
+.orbit-chip b {
+  display: block; width: max-content; transform: translate(-50%, -50%); white-space: nowrap;
+  font: 700 .82rem/1 var(--body); color: #eaf2ff; padding: 9px 14px; border-radius: 999px;
+  background: rgba(8, 16, 46, .9); border: 1px solid var(--line-strong);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .35); backdrop-filter: blur(8px);
+}
+.orbit-chip:nth-child(odd) b { border-color: rgba(45, 168, 255, .55); }
+.orbit-chip:nth-child(even) b { border-color: rgba(255, 79, 180, .55); }
+@keyframes orbit-spin { to { transform: rotate(360deg); } }
+@media (max-width: 1140px) { .portrait { --R: min(200px, 44vw); margin-top: 34px; margin-bottom: 58px; } }
+@media (max-width: 560px) {
+  .portrait { --R: 29vw; margin-top: 22px; margin-bottom: 30px; }
+  .orbit-chip b { font-size: .7rem; padding: 7px 10px; }
+  .orbit-chip:nth-child(n+7) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .orbit, .orbit-chip span { animation: none; } }
+@media (max-width: 560px) {
+  .orbit-chip:nth-child(1) { --a: 0deg !important; } .orbit-chip:nth-child(2) { --a: 60deg !important; }
+  .orbit-chip:nth-child(3) { --a: 120deg !important; } .orbit-chip:nth-child(4) { --a: 180deg !important; }
+  .orbit-chip:nth-child(5) { --a: 240deg !important; } .orbit-chip:nth-child(6) { --a: 300deg !important; }
+}
