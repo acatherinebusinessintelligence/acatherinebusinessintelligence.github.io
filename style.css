@@ -356,3 +356,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) { .channel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .channel-grid { grid-template-columns: 1fr; } .ch-arrow { display: none; } }
 .channel .ch-arrow { display: none; }
+.mini-stats { display: grid; gap: 10px; }
+.mini-stats div { display: flex; align-items: baseline; gap: 12px; }
+.mini-stats b { font: 800 1.7rem/1 var(--display); letter-spacing: -.04em; min-width: 78px; }
+.mini-stats span { color: var(--muted); font-size: .92rem; }
