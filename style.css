@@ -419,3 +419,15 @@ html, body { overflow-x: clip; }
 @media (max-width: 860px) {
   .name-meaning, .identity, .story-teaser { grid-template-columns: 1fr; }
 }
+
+/* ---------- Programa de formación (sector salud) ---------- */
+.course-feature { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: 32px; padding: 34px; align-items: center; }
+.course-feature h3 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
+.course-list { margin: 6px 0 18px; gap: 10px; }
+.course-list li { font-size: .97rem; }
+.course-media { margin: 0; }
+.course-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.course-shots img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 18px; border: 1px solid var(--line-strong); box-shadow: var(--shadow); }
+.course-shots picture:last-child { transform: translateY(26px); }
+.course-media figcaption { margin-top: 38px; color: var(--soft); font-size: .86rem; text-align: center; }
+@media (max-width: 860px) { .course-feature { grid-template-columns: 1fr; padding: 22px; } .course-shots picture:last-child { transform: none; } .course-media figcaption { margin-top: 12px; } }
