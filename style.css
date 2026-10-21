@@ -459,3 +459,34 @@ html, body { overflow-x: clip; }
 @media (prefers-reduced-motion: reduce) {
   .marquee { overflow-x: auto; } .marquee-track { animation: none; } .marquee-track[aria-hidden="true"] { display: none; }
 }
+
+/* ---------- Lector de la página ---------- */
+.reader { position: fixed; right: 18px; bottom: 18px; z-index: 60; }
+.reader button, .reader select { font: 700 .92rem var(--body); color: #fff; cursor: pointer; }
+.reader svg { width: 20px; height: 20px; fill: currentColor; stroke: currentColor; stroke-width: 0; }
+.reader-open svg path:nth-child(2) { fill: none; stroke-width: 2; stroke-linecap: round; }
+.reader-open {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 20px; border: 0; border-radius: 999px;
+  background: var(--grad-btn); box-shadow: 0 14px 34px rgba(55, 115, 255, .35);
+}
+.reader-open:hover { transform: translateY(-2px); }
+.reader-bar {
+  display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 999px;
+  background: rgba(8, 16, 46, .96); border: 1px solid var(--line-strong); box-shadow: var(--shadow); backdrop-filter: blur(10px);
+}
+.reader-bar[hidden], .reader-open[hidden] { display: none; }
+.reader-bar button { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-strong); background: rgba(255, 255, 255, .06); }
+.reader-bar .reader-play { background: var(--grad-btn); border-color: transparent; }
+.reader-close svg { fill: none; stroke-width: 2.2; stroke-linecap: round; }
+.reader-speed { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: .82rem; font-weight: 700; padding: 0 4px; }
+.reader-speed select { background: rgba(255, 255, 255, .08); border: 1px solid var(--line-strong); border-radius: 10px; padding: 6px 4px; font-size: .82rem; }
+.reader-speed option { color: #000; }
+.reader-progress { color: var(--soft); font-size: .8rem; min-width: 42px; text-align: center; }
+.reading { outline: 2px solid rgba(45, 168, 255, .7); outline-offset: 6px; border-radius: 8px; background: rgba(45, 168, 255, .08); }
+@media (max-width: 560px) {
+  .reader { right: 12px; bottom: 12px; left: 12px; display: flex; justify-content: flex-end; }
+  .reader-open span { display: none; } .reader-open { width: 54px; padding: 0; justify-content: center; }
+  .reader-bar { width: 100%; justify-content: space-between; }
+  .reader-speed { font-size: 0; } .reader-speed select { font-size: .82rem; }
+}
+@media print { .reader { display: none; } }
