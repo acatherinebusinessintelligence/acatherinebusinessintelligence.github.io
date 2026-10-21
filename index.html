@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -56,20 +56,23 @@
             <img src="images/alejandra.jpg" alt="Retrato de Alejandra Montaña" width="640" height="960" fetchpriority="high">
           </picture>
         </div>
-        <ul class="orbit" aria-label="Aspectos destacados del perfil">
-          <li class="orbit-chip" style="--a:45deg"><span><b>Magíster en IA</b></span></li>
-          <li class="orbit-chip" style="--a:135deg"><span><b>Docente universitaria</b></span></li>
-          <li class="orbit-chip" style="--a:225deg"><span><b>Investigadora CAIDP</b></span></li>
-          <li class="orbit-chip" style="--a:315deg"><span><b>Conferencista LATAM</b></span></li>
+        <ul class="orbit orbit-icons" aria-hidden="true">
+          <li class="orbit-chip" style="--a:-35deg"><span><i class="orb-ico ia" title="Inteligencia artificial"><svg viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></i></span></li>
+          <li class="orbit-chip" style="--a:145deg"><span><i class="orb-ico corazon" title="Corazón"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg></i></span></li>
         </ul>
       </div>
     </section>
 
+    <div class="marquee" aria-label="Lo que hago">
+      <ul class="marquee-track"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>Magíster en Inteligencia Artificial</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg>Docente universitaria</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg>Investigadora CAIDP · política de IA</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>Conferencista en Latinoamérica</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg>IA responsable y centrada en las personas</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg>Neurociencia y señales EEG</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6z"/></svg>RAG para transparencia legislativa</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15-9 0-15 6-15 14zM5 19l7-7"/></svg>IA para el agro</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>Big Data & Analytics</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Par evaluadora IEEE Access</li></ul>
+      <ul class="marquee-track" aria-hidden="true"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>Magíster en Inteligencia Artificial</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg>Docente universitaria</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg>Investigadora CAIDP · política de IA</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>Conferencista en Latinoamérica</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/></svg>IA responsable y centrada en las personas</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg>Neurociencia y señales EEG</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6z"/></svg>RAG para transparencia legislativa</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15-9 0-15 6-15 14zM5 19l7-7"/></svg>IA para el agro</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>Big Data & Analytics</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Par evaluadora IEEE Access</li></ul>
+    </div>
+
     <div class="stats reveal" role="list">
-      <div class="stat" role="listitem"><b class="grad-text">20+</b><span>años en tecnología y datos</span></div>
-      <div class="stat" role="listitem"><b class="grad-text">8</b><span>universidades donde he enseñado</span></div>
-      <div class="stat" role="listitem"><b class="grad-text">3</b><span>posgrados en IA, Big Data y Supply Chain</span></div>
-      <div class="stat" role="listitem"><b class="grad-text">2</b><span>países en colaboración EEG (MX–CO)</span></div>
+      <div class="stat" role="listitem"><b class="grad-text" data-count="20" data-suffix="+">20+</b><span>años en tecnología y datos</span></div>
+      <div class="stat" role="listitem"><b class="grad-text" data-count="8">8</b><span>universidades donde he enseñado</span></div>
+      <div class="stat" role="listitem"><b class="grad-text" data-count="3">3</b><span>posgrados en IA, Big Data y Supply Chain</span></div>
+      <div class="stat" role="listitem"><b class="grad-text" data-count="2">2</b><span>países en colaboración EEG (MX–CO)</span></div>
     </div>
 
     <section class="section">
@@ -199,6 +202,6 @@
     <span><a href="mailto:analizamostunegocio@gmail.com">analizamostunegocio@gmail.com</a></span>
   </div>
 </footer>
-<script src="main.js?v=11"></script>
+<script src="main.js?v=12"></script>
 </body>
 </html>

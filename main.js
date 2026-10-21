@@ -33,3 +33,24 @@
   }, { rootMargin: '0px 0px -8% 0px' });
   items.forEach(function (el) { io.observe(el); });
 })();
+
+// Cifras que cuentan hacia arriba al aparecer en pantalla
+(function () {
+  var nums = document.querySelectorAll('[data-count]');
+  if (!nums.length || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var run = function (el) {
+    var end = parseInt(el.getAttribute('data-count'), 10), suf = el.getAttribute('data-suffix') || '', t0 = null, dur = 1400;
+    var step = function (t) {
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1), v = Math.round(end * (1 - Math.pow(1 - p, 3)));
+      el.textContent = v + (p === 1 ? suf : '');
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { run(e.target); io.unobserve(e.target); } });
+  }, { threshold: .6 });
+  nums.forEach(function (n) { n.textContent = '0'; io.observe(n); });
+})();
