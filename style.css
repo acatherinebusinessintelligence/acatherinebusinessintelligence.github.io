@@ -384,7 +384,7 @@ html, body { overflow-x: clip; }
 .story { max-width: 700px; margin: clamp(32px, 5vw, 56px) auto 0; font-size: clamp(1.05rem, 1.35vw, 1.17rem); line-height: 1.85; color: #d7e1f8; }
 .story p { margin: 0 0 1.4em; }
 .story strong { color: #fff; }
-.story:first-of-type > p:first-child::first-letter {
+.story:first-of-type > .story-step.first + p::first-letter {
   float: left; font: 800 4.2em/.82 var(--display); margin: .08em .12em 0 0;
   background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -513,3 +513,43 @@ html, body { overflow-x: clip; }
   .nav-cta { margin: 8px 0 0; }
   .lang-switch { align-self: flex-start; margin: 6px 0 0 14px; }
 }
+
+/* ---------- Mi historia: lo que la ciencia me ayudó a entender ---------- */
+.science { max-width: 1000px; margin: clamp(40px, 6vw, 72px) auto 0; }
+.science-head { max-width: 700px; margin: 0 auto 26px; text-align: center; }
+.science-head h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+.science-head p { color: var(--muted); }
+.science-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.science-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
+.science-card h3 { font-size: 1.2rem; margin: 12px 0 8px; }
+.science-card p { color: var(--muted); font-size: .96rem; margin: 0 0 12px; }
+.science-card p strong { color: var(--text); }
+.science-card blockquote { margin: 12px 0 10px; font: 700 1.2rem/1.4 var(--display); letter-spacing: -.02em; color: #fff; }
+.science-tag { align-self: flex-start; font-size: .74rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #ffb3dc;
+  padding: 5px 10px; border-radius: 999px; background: rgba(255, 79, 180, .14); border: 1px solid rgba(255, 79, 180, .35); }
+.science-src { font-size: .88rem !important; color: var(--soft) !important; }
+.science-note { margin-top: auto !important; padding-top: 10px; border-top: 1px dashed var(--line-strong); font-size: .84rem !important; color: var(--soft) !important; }
+.practice { margin-top: 18px; padding: clamp(22px, 3.5vw, 34px); border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(45, 168, 255, .12), rgba(255, 79, 180, .12)); border: 1px solid var(--line-strong); }
+.practice h3 { font-size: 1.4rem; margin-bottom: 14px; }
+.practice > p { color: var(--muted); margin: 16px 0 0; }
+.practice-steps { list-style: none; counter-reset: paso; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 0; margin: 0; }
+.practice-steps li { counter-increment: paso; position: relative; padding: 46px 16px 16px; border-radius: 16px; background: rgba(8, 16, 46, .7);
+  border: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+.practice-steps li::before { content: counter(paso); position: absolute; top: 12px; left: 16px; width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; font: 800 .85rem var(--display); color: #fff; background: var(--grad-btn); }
+.practice-steps li strong { color: var(--text); }
+@media (max-width: 900px) { .science-grid { grid-template-columns: 1fr; } .practice-steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .practice-steps { grid-template-columns: 1fr; } }
+
+/* ---------- Mi historia: momentos del relato y fuentes ---------- */
+.story-step { display: flex; align-items: center; gap: 12px; margin: 2.4em 0 .9em; font-size: clamp(1.3rem, 2.4vw, 1.65rem); color: #fff; }
+.story-step.first { margin-top: 0; }
+.story-step span { display: grid; place-items: center; flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%;
+  font: 800 .95rem var(--display); color: #fff; background: var(--grad-btn); }
+.story-quote { margin: 1.2em 0 1.4em; padding: 18px 22px; border-radius: 16px; font: 700 clamp(1.15rem, 2vw, 1.4rem)/1.45 var(--display);
+  color: #fff; background: linear-gradient(135deg, rgba(45, 168, 255, .14), rgba(255, 79, 180, .14)); border: 1px solid var(--line-strong); }
+.story-sources { margin-top: 2.4em; padding: 16px 20px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); font-size: .9rem; line-height: 1.6; }
+.story-sources summary { cursor: pointer; font-weight: 800; color: var(--muted); }
+.story-sources ul { margin: 12px 0 0; padding-left: 1.1em; color: var(--soft); }
+.story-sources li { margin-bottom: 8px; }
