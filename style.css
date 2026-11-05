@@ -553,3 +553,11 @@ html, body { overflow-x: clip; }
 .story-sources summary { cursor: pointer; font-weight: 800; color: var(--muted); }
 .story-sources ul { margin: 12px 0 0; padding-left: 1.1em; color: var(--soft); }
 .story-sources li { margin-bottom: 8px; }
+
+/* ---------- Divulgación ---------- */
+.others { color: var(--muted); margin: 22px 0 0; font-size: .98rem; }
+.others strong { color: var(--text); }
+@media (min-width: 861px) and (max-width: 1180px) {
+  .nav-links a { padding: 10px 10px; font-size: .9rem; }
+  .nav-links a[aria-current="page"]::after { left: 10px; right: 10px; }
+}
