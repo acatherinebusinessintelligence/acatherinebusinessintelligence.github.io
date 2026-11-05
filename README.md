@@ -11,6 +11,7 @@ https://acatherinebusinessintelligence.github.io/
 | `investigacion.html` | Proyectos con filtros por línea, publicaciones con DOI, ponencias y semilleros |
 | `proyectos.html` | Desarrollos de IA aplicada e impacto social |
 | `docencia.html` | Laboratorios y simuladores abiertos, trayectoria docente y formación ejecutiva |
+| `divulgacion.html` | Conferencias, medios, política de IA (CAIDP), canales propios y declaración de uso de IA |
 
 `style.css` contiene el sistema visual (paleta azul → rosa de DraCorazónIA, Space Grotesk + Manrope)
 y `main.js` el menú móvil, los filtros y las animaciones de aparición.
